@@ -38,3 +38,12 @@ sudo vim /etc/hosts
 ### 访问部署成功的服务
 
 1. http://www.blog.la
+
+## 切换php 54-> 70服务
+
+1. 定位`./conf/conf.d/www.blog.la.conf`
+    1. `fastcgi_pass   php54:9000;`修改为`fastcgi_pass   php72:9000;`
+1. 重启服务
+    1. `cmmand + c`中断（一定要等所有服务都停止，出现done则为一个服务停止）
+    1. `docker-compose up`
+
