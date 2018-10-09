@@ -12,9 +12,5 @@
 */
 
 Route::get('/', function () {
-    return date('Y-m-d H:i:s');
-});
-
-Route::get('user', function () {
-    return 'user';
+    return view('welcome');
 });
