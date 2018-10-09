@@ -2,4 +2,3 @@
 !.gitignore
 www/*
 !www/localhost/
-!www/www.blog.la/
